@@ -1,0 +1,14 @@
+<div id="back_mainAngularApp">
+  <span id="countPart_mainAngularApp"> Current count: {{ count }} </span>
+  <button type="button" id="button_mainAngularApp" (click)="enableDisable()">
+    Click me!
+  </button>
+  <div id="imageDiv_mainAngularApp">
+    <img
+      id="img_mainAngularApp"
+      [src]="angularImgUrl"
+      alt="Angular Logo"
+      *ngIf="clicked"
+    />
+  </div>
+</div>
